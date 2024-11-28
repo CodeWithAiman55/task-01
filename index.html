@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Header is left intentially blank, it is used for semantic purposes -->
+  </header>
+
+  <main>
+    <section>
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>Name and Address</legend>
+
+          <!-- CiviCRM Question -->
+          <div>
+            <label>Do you use CiviCRM?</label>
+            <label>
+              <input type="radio" name="civicrm" id="civicrm-yes" value="yes"> Yes
+            </label>
+            <label>
+              <input type="radio" name="civicrm" id="civicrm-no" value="no"> No
+            </label>
+            <label>
+              <button type="button"
+                style="color: blue; text-decoration: underline; cursor: pointer; border: none; background-color: transparent;">
+                ( unselect )
+              </button>
+            </label>
+          </div>
+
+          <br>
+
+          <!-- How long using CiviCRM -->
+          <div>
+            <label for="usage-duration">How long have you been using CiviCRM?</label>
+            <select id="usage-duration" name="usage-duration">
+              <option value="" disabled selected>- Select -</option>
+              <option value="one-month">1 month</option>
+              <option value="six-months">6 months</option>
+              <option value="twelve-months">12 months</option>
+            </select>
+          </div>
+
+          <br>
+
+          <!-- CMS Question -->
+          <div>
+            <label for="cms">Which CMS do you use?</label>
+            <select id="cms" name="cms">
+              <option value="" disabled selected>- Select -</option>
+              <option value="wordpress">WordPress</option>
+              <option value="drupal">Drupal</option>
+              <option value="joomla">Joomla</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <br>
+
+          <!-- Skill Set -->
+          <div>
+            <label for="skills">Your skill set</label>
+            <select id="skills" name="skills">
+              <option value="" disabled selected>- Select -</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+
+          <br>
+
+          <!-- Contact Information -->
+          <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <br>
+
+          <div>
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+          </div>
+
+          <br>
+
+          <div>
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+          </div>
+
+          <p id="name-info">First and last name will be shared with other visitors to the site.</p>
+
+          <div>
+            <label for="street-address">Street Address (Home)</label>
+            <input type="text" id="street-address" name="street-address" placeholder="Enter your street address">
+          </div>
+
+          <br>
+
+          <div>
+            <label for="city">City (Home)</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city">
+          </div>
+
+          <br>
+
+          <div>
+            <label for="postal-code">Postal Code (Home)</label>
+            <input type="text" id="postal-code" name="postal-code" placeholder="Enter your postal code">
+          </div>
+
+          <br>
+
+          <div>
+            <label for="country">Country (Home)</label>
+            <select id="country" name="country">
+              <option value="" disabled selected>- Select -</option>
+              <option value="united-states">United States</option>
+              <option value="canada">Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <p>Your state/province and country of residence will be shared with others so folks can find others in their
+            community.</p>
+
+          <div>
+            <label for="state">State (Home)</label>
+            <select id="state" name="state">
+              <option value="" disabled selected>- Select -</option>
+              <option value="california">California</option>
+              <option value="texas">Texas</option>
+              <option value="new-york">New York</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <br>
+
+        </fieldset>
+
+        <!-- Buttons -->
+        <div>
+          <button type="submit">Save</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer is left intentially blank, it is used for semantic purposes -->
+  </footer>
+  
+</body>
+
+</html>
